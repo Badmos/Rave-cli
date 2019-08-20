@@ -1,0 +1,24 @@
+{
+    "name": "rave-cli",
+    "version": "1.0.0",
+    "description": "Flutterwave rave CLI client",
+    "main": "index.js",
+    "preferGlobal": true,
+    "bin": "./index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "Flutterwave",
+        "Rave",
+        "CLI",
+        "Payment"
+    ],
+    "author": "Yusuf Badmos",
+    "license": "MIT",
+    "dependencies": {
+        "commander": "^3.0.0",
+        "inquirer": "^6.5.1",
+        "minify": "^4.1.3"
+    }
+}
