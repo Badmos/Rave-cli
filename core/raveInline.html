@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rave Inline</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="rave-inline.js"></script>
+</head>
+
+<body>
+    <h1>Pay with Rave</h1>
+    <div class="container" id="ravepay">
+        <row>
+            <div class="col-md-6 col-md-offset-4">
+                <form>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
+                            <label for="">Email address</label>
+                            <input type="text" name="email" id="email" class="form-control border-input" value="user@example.com" placeholder="Enter email address" style="margin-bottom: 30px;">
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" id="submit" type="button" onClick="payWithRave()">Pay Now</button>
+                    <div class="clearfix"></div>
+            </div>
+            </form>
+
+    </div>
+    </row>
+    </div>
+</body>
+
+</html>
