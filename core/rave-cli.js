@@ -36,8 +36,8 @@ const createHTMLFile = (fileName, newfileName, extension) => {
     })
 }
 
-// Inquirer, minifier and file type options logic. Defaults mini to 'true'
-const generateRaveFile = (type, fileName, mini = `${!undefined}`) => {
+// Inquirer, minifier and file type options logic. Defaults mini to 'false' (String type)
+const generateRaveFile = (type, fileName, mini = `${false}`) => {
     type = type.toLowerCase();
     mini = mini.toLowerCase();
     inquirer.prompt(raveInlineQuestions.question)
